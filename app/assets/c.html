@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>angular-chart.js - beautiful, reactive, responsive charts for Angular.JS using Chart.js</title>
+
+
+</head>
+<body ng-app="examples" id="top" style="padding:0;">
+
+<div class="container">
+
+    <section id="directives">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="LineCtrl">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Line Chart</div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels"
+                                chart-click="onClick" chart-hover="onHover" chart-series="series" chart-options="options"
+                                chart-dataset-override="datasetOverride"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/Chart.min.js"></script>
+<script src="/js/ui-bootstrap-tpls.min.js"></script>
+<script src="/js/angular-chart.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
